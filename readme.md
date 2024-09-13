@@ -44,17 +44,18 @@ This project is a simple e-commerce application built with **Node.js**, **Expres
 
 ## API Endpoints
 
-- ## Authentication
-  -- **POST /signup**: Register a new user (buyer or seller).
-  -- **POST /login**: Authenticate user and get a JWT token.
+- ### Authentication
 
-- ## Product Management (Seller only)
-  -- **POST /products**: Add a new product.
-  -- **PUT /products/:id**: Update product details.
-  -- **DELETE /products/:id**: Delete a product.
+  - **POST /signup**: Register a new user (buyer or seller).
+  - **POST /login**: Authenticate user and get a JWT token.
 
-- ## Orders (Buyer only)
-  -- **POST /cart:** Place to cart.
-  -- **GET /cart**: View cart products.
-  -- **GET /search**: search Products.
+- ### Product Management (Seller only)
 
+  - **POST /products**: Add a new product.
+  - **PUT /products/:id**: Update product details.
+  - **DELETE /products/:id**: Delete a product.
+
+- ### Orders (Buyer only)
+  - **POST /cart**: Add a product to the cart.
+  - **GET /cart**: View cart products.
+  - **GET /search**: Search for products.
