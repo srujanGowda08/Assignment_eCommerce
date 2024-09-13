@@ -21,3 +21,40 @@ This project is a simple e-commerce application built with **Node.js**, **Expres
    ```bash
    git clone https://github.com/srujanGowda08/Assignment_eCommerce.git
    ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd Assignment_eCommerce
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   npm i pg bcryptjs jsonwebtoken dotenv express
+   ```
+
+4. Set up PostgreSQL and update .env with database configurations:
+
+5. Run the application:
+
+```bash
+   node server.js
+```
+
+## API Endpoints
+
+- ## Authentication
+  -- **POST /signup**: Register a new user (buyer or seller).
+  -- **POST /login**: Authenticate user and get a JWT token.
+
+- ## Product Management (Seller only)
+  -- **POST /products**: Add a new product.
+  -- **PUT /products/:id**: Update product details.
+  -- **DELETE /products/:id**: Delete a product.
+
+- ## Orders (Buyer only)
+  -- **POST /cart:** Place to cart.
+  -- **GET /cart**: View cart products.
+  -- **GET /search**: search Products.
+
